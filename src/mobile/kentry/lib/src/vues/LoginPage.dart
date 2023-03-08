@@ -91,7 +91,7 @@ class _LoginFormState extends State<LoginForm> {
                             primary: Color(0xFF20478B),
                             textStyle: const TextStyle(
                                 color: Colors.white,
-                                fontSize: 30, 
+                                fontSize: 25, 
                                 fontStyle: FontStyle.normal),
                           ),
                         ),
@@ -106,7 +106,7 @@ class _LoginFormState extends State<LoginForm> {
                                 style: TextStyle(fontSize: 19),
                               ),
                               onPressed: (){
-                               
+                                 Navigator.pushNamed(context, '/second');
                               },
                             ) ,
                              Padding(padding: EdgeInsets.symmetric(vertical: 5)),

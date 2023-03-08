@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'src/vues/LoginPage.dart' ;
+import 'src/vues/EmailPhoneNumberPage.dart' ;
+
 
 void main() => runApp( MyApp() );        
 
@@ -11,6 +13,12 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'kentry',
       debugShowCheckedModeBanner: false,
-      home: login() ,
+       initialRoute: '/',
+        routes: {
+          // When navigating to the "/" route, build the FirstScreen widget.
+          '/': (context) => const login(),
+          // When navigating to the "/second" route, build the SecondScreen widget.
+          '/second': (context) => const ChoixEmailPhone(),
+        },
     );  }
 }
