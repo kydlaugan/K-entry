@@ -55,7 +55,7 @@ class _EmailEnterState extends State<EmailEnter> {
                                   return 'Entrer une adresse email ';
                                 }
                                 final RegExp emailExp = RegExp(r'^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$');
-                                if(!emailExp.hasMatch(input!)){
+                                if(!emailExp.hasMatch(input)){
                                   return "Veillez entrer une Email correcte " ;
                                 }
                                 return null;
@@ -78,6 +78,8 @@ class _EmailEnterState extends State<EmailEnter> {
                               if (_formKey.currentState!.validate()) {
                                 _formKey.currentState!.save();
                                 // Appel API de connexion avec _email et _password
+                                 Navigator.pushNamed(context, '/EmailMessage');
+
                               }
                             },
                             child: const Text('Envoyer'),

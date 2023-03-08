@@ -78,6 +78,7 @@ flutter:
   assets:
     - assets/icon/cuate.png
     - assets/icon/flash_screen.png
+    - assets/icon/email.png
 
   #   - images/a_dot_ham.jpeg
 

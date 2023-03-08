@@ -3,9 +3,8 @@ import 'src/vues/LoginPage.dart' ;
 import 'src/vues/EmailPhoneNumberPage.dart' ;
 import 'src/vues/EmailEnterPage.dart' ;
 import 'src/vues/EnterNumberPhonePage.dart' ;
-
-
-
+import 'src/vues/EmailMessage.dart' ;
+import 'src/vues/PhoneMessage.dart' ;
 
 void main() => runApp( MyApp() );        
 
@@ -25,7 +24,8 @@ class MyApp extends StatelessWidget {
           '/second': (context) => const ChoixEmailPhone(),
           '/EmailEnter': (context) => const EmailEnter(),
            '/PhoneEnter': (context) => const PhoneEnter(),
-
+           '/EmailMessage': (context) => const EmailMessage(),
+           '/PhoneMessage': (context) => const PhoneMessage(),
 
         },
     );  }

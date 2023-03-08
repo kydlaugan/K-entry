@@ -79,6 +79,7 @@ class _PhoneEnterState extends State<PhoneEnter> {
                               if (_formKey.currentState!.validate()) {
                                 _formKey.currentState!.save();
                                 // Appel API de connexion avec _email et _password
+                                Navigator.pushNamed(context, '/PhoneMessage');
                               }
                             },
                             child: const Text('Envoyer'),
