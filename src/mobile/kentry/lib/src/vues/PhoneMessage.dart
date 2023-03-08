@@ -50,6 +50,7 @@ class PhoneMessage extends StatelessWidget {
                     height: 50,
                      child: ElevatedButton(
                             onPressed: () {
+                                 Navigator.pushNamed(context, '/OptCode');
                             },
                             child: const Text('Continuer'),
                             style: ElevatedButton.styleFrom(

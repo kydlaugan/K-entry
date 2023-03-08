@@ -5,6 +5,7 @@ import 'src/vues/EmailEnterPage.dart' ;
 import 'src/vues/EnterNumberPhonePage.dart' ;
 import 'src/vues/EmailMessage.dart' ;
 import 'src/vues/PhoneMessage.dart' ;
+import 'src/vues/OptCode.dart' ;
 
 void main() => runApp( MyApp() );        
 
@@ -23,9 +24,10 @@ class MyApp extends StatelessWidget {
           // When navigating to the "/second" route, build the SecondScreen widget.
           '/second': (context) => const ChoixEmailPhone(),
           '/EmailEnter': (context) => const EmailEnter(),
-           '/PhoneEnter': (context) => const PhoneEnter(),
-           '/EmailMessage': (context) => const EmailMessage(),
-           '/PhoneMessage': (context) => const PhoneMessage(),
+          '/PhoneEnter': (context) => const PhoneEnter(),
+          '/EmailMessage': (context) => const EmailMessage(),
+          '/PhoneMessage': (context) => const PhoneMessage(),
+          '/OptCode': (context) => const OptCode(),
 
         },
     );  }
