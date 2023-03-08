@@ -1,6 +1,10 @@
 import 'package:flutter/material.dart';
 import 'src/vues/LoginPage.dart' ;
 import 'src/vues/EmailPhoneNumberPage.dart' ;
+import 'src/vues/EmailEnterPage.dart' ;
+import 'src/vues/EnterNumberPhonePage.dart' ;
+
+
 
 
 void main() => runApp( MyApp() );        
@@ -19,6 +23,10 @@ class MyApp extends StatelessWidget {
           '/': (context) => const login(),
           // When navigating to the "/second" route, build the SecondScreen widget.
           '/second': (context) => const ChoixEmailPhone(),
+          '/EmailEnter': (context) => const EmailEnter(),
+           '/PhoneEnter': (context) => const PhoneEnter(),
+
+
         },
     );  }
 }

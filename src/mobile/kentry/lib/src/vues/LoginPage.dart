@@ -95,7 +95,8 @@ class _LoginFormState extends State<LoginForm> {
                                 fontStyle: FontStyle.normal),
                           ),
                         ),
-                  ),Padding(padding: EdgeInsets.symmetric(vertical: 5)),
+                  ),
+                  Padding(padding: EdgeInsets.symmetric(vertical: 5)),
                   Center(
                     child: Column(
                       mainAxisAlignment: MainAxisAlignment.center,

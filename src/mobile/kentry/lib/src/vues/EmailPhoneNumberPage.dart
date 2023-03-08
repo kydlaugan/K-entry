@@ -24,7 +24,7 @@ class ChoixEmailPhone extends StatelessWidget {
                         Image.asset("assets/icon/flash_screen.png",height: MediaQuery.of(context).size.height*0.15),
                       ],
                  ),
-                 Padding(padding: EdgeInsets.symmetric(vertical: 15)),
+                 Padding(padding: EdgeInsets.symmetric(vertical: 25)),
                  Row(
                      mainAxisAlignment: MainAxisAlignment.start,
                      children: [
@@ -43,7 +43,7 @@ class ChoixEmailPhone extends StatelessWidget {
                     height: 50,
                      child: ElevatedButton(
                             onPressed: () {
-                              
+                                Navigator.pushNamed(context, '/EmailEnter');
                             },
                             child: const Text('Continuer Avec Google'),
                             style: ElevatedButton.styleFrom(
@@ -65,7 +65,7 @@ class ChoixEmailPhone extends StatelessWidget {
                     height: 50,
                      child: ElevatedButton(
                             onPressed: () {
-                              
+                                Navigator.pushNamed(context, '/PhoneEnter');
                             },
                             child: const Text('Continuer avec le Contact'),
                             style: ElevatedButton.styleFrom(
