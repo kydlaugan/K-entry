@@ -91,7 +91,7 @@ class _LoginFormState extends State<LoginForm> {
                             primary: Color(0xFF20478B),
                             textStyle: const TextStyle(
                                 color: Colors.white,
-                                fontSize: 25, 
+                                fontSize: 15, 
                                 fontStyle: FontStyle.normal),
                           ),
                         ),

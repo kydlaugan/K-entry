@@ -15,7 +15,7 @@ class ChoixEmailPhone extends StatelessWidget {
       ),
       body: SafeArea(
         child: Container(
-          margin: EdgeInsets.only(left: 20 , right: 20 , top: 40),
+          margin: EdgeInsets.only(left: 20 , right: 20 , top: 20),
           child: Column(
             children: [
                  Row(
@@ -24,23 +24,23 @@ class ChoixEmailPhone extends StatelessWidget {
                         Image.asset("assets/icon/flash_screen.png",height: MediaQuery.of(context).size.height*0.15),
                       ],
                  ),
-                 Padding(padding: EdgeInsets.symmetric(vertical: 25)),
+                 Padding(padding: EdgeInsets.symmetric(vertical: 20)),
                  Row(
                      mainAxisAlignment: MainAxisAlignment.start,
                      children: [
-                        Text("Créer Votre" , style: TextStyle(fontSize: 45, fontWeight: FontWeight.bold),),
+                        Text("Créer Votre" , style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),),
                       ],
                  ),
                  Row(
                      mainAxisAlignment: MainAxisAlignment.start,
                      children: [
-                        Text("Compte ," , style: TextStyle(fontSize: 45, fontWeight: FontWeight.bold),)   
+                        Text("Compte ," , style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),)   
                       ],
                  ),
-                 Padding(padding: EdgeInsets.symmetric(vertical: 25)),
+                 Padding(padding: EdgeInsets.symmetric(vertical: 20)),
                   Container(
                     width: double.infinity,
-                    height: 50,
+                    height: 40,
                      child: ElevatedButton(
                             onPressed: () {
                                 Navigator.pushNamed(context, '/EmailEnter');
@@ -53,7 +53,7 @@ class ChoixEmailPhone extends StatelessWidget {
                             primary: Color(0xFF20478B),
                             textStyle: const TextStyle(
                                 color: Colors.white,
-                                fontSize: 25, 
+                                fontSize: 15, 
                                 fontStyle: FontStyle.normal),
                           ),
                         ),
@@ -62,7 +62,7 @@ class ChoixEmailPhone extends StatelessWidget {
                   Padding(padding: EdgeInsets.symmetric(vertical: 25)),
                   Container(
                     width: double.infinity,
-                    height: 50,
+                    height: 40,
                      child: ElevatedButton(
                             onPressed: () {
                                 Navigator.pushNamed(context, '/PhoneEnter');
@@ -75,7 +75,7 @@ class ChoixEmailPhone extends StatelessWidget {
                             primary: Color(0xFF20478B),
                             textStyle: const TextStyle(
                                 color: Colors.white,
-                                fontSize: 25, 
+                                fontSize: 15, 
                                 fontStyle: FontStyle.normal),
                           ),
                         ),

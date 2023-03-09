@@ -22,7 +22,7 @@ class _EmailEnterState extends State<EmailEnter> {
       ),
       body: SafeArea(
         child: Container(
-          margin: EdgeInsets.only(left: 20 , right: 20 , top: 40),
+          margin: EdgeInsets.only(left: 20 , right: 20 , top: 20),
           child: Column(
              children: [
                  Row(
@@ -35,20 +35,20 @@ class _EmailEnterState extends State<EmailEnter> {
                  Row(
                      mainAxisAlignment: MainAxisAlignment.start,
                      children: [
-                        Text("Entrer Votre " , style: TextStyle(fontSize: 45, fontWeight: FontWeight.bold),),
+                        Text("Entrer Votre " , style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),),
                       ],
                  ),
                  Row(
                      mainAxisAlignment: MainAxisAlignment.start,
                      children: [
-                        Text("Email ," , style: TextStyle(fontSize: 45, fontWeight: FontWeight.bold),)   
+                        Text("Email ," , style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),)   
                       ],
                  ),
                  Form(
                   key: _formKey,
                   child: Column(
                     children: [
-                      Padding(padding: EdgeInsets.symmetric(vertical: 30)),
+                      Padding(padding: EdgeInsets.symmetric(vertical: 20)),
                        TextFormField(
                             validator: (input) {
                                 if (input!.isEmpty) {
@@ -90,7 +90,7 @@ class _EmailEnterState extends State<EmailEnter> {
                             primary: Color(0xFF20478B),
                             textStyle: const TextStyle(
                                 color: Colors.white,
-                                fontSize: 25, 
+                                fontSize: 15, 
                                 fontStyle: FontStyle.normal),
                           ),
                         ),

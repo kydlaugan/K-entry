@@ -15,7 +15,7 @@ class PhoneMessage extends StatelessWidget {
       ),
        body: SafeArea(
         child: Container(
-          margin: EdgeInsets.only(left: 20 , right: 20 , top: 40),
+          margin: EdgeInsets.only(left: 20 , right: 20 , top: 20),
           child: Column(
              children: [
                  Row(
@@ -28,26 +28,26 @@ class PhoneMessage extends StatelessWidget {
                  Row(
                      mainAxisAlignment: MainAxisAlignment.center,
                      children: [
-                        Text("Regarder Vos Messages " , style: TextStyle(fontSize: 35, fontWeight: FontWeight.bold),),
+                        Text("Regarder Vos Messages " , style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),),
                       ],
                  ),
                   Padding(padding: EdgeInsets.symmetric(vertical: 15)),
                   Row(
                      mainAxisAlignment: MainAxisAlignment.center,
                      children: [
-                        Text("Nous vous enverrons un code d'activation  " , style: TextStyle(fontSize:20),),
+                        Text("Nous vous enverrons un code d'activation  " , style: TextStyle(fontSize:12),),
                       ],
                  ),
                   Row(
                      mainAxisAlignment: MainAxisAlignment.center,
                      children: [
-                        Text("Par votre Numéro de Telephone  " , style: TextStyle(fontSize:20),),
+                        Text("Par votre Numéro de Telephone  " , style: TextStyle(fontSize:12),),
                       ],
                  ),
                   Padding(padding: EdgeInsets.symmetric(vertical: 25)),
                   Container(
                     width: double.infinity,
-                    height: 50,
+                    height: 40,
                      child: ElevatedButton(
                             onPressed: () {
                                  Navigator.pushNamed(context, '/OptCode');
@@ -60,7 +60,7 @@ class PhoneMessage extends StatelessWidget {
                             primary: Color(0xFF20478B),
                             textStyle: const TextStyle(
                                 color: Colors.white,
-                                fontSize: 25, 
+                                fontSize: 15, 
                                 fontStyle: FontStyle.normal),
                           ),
                         ),
